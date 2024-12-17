@@ -1,0 +1,124 @@
+.main {
+    z-index: 100;
+    position: absolute;
+    left: 320px;
+    top: 20px;
+    
+}
+
+.notify{
+    position: absolute;
+    top: 27.5px;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 10px;
+
+    &
+    svg{
+        width: 35px;
+        height: 35px;
+        position: relative;
+    }
+
+    &
+
+    svg:hover{
+        background-color: #efecf1;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    &
+
+    span{
+        background-color: #EBE7EE;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #6F6D71;
+    }
+
+    &
+
+    span:hover{
+        background-color: #efecf1;
+        cursor: pointer;
+    }
+}
+
+.notify::after{
+    content: '20';
+    width: 17px;
+    height: 17px;
+    top: 0;
+    right: 47px;
+    position: absolute;
+    background-color: #A238FF;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pesquisa-ico {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.cont-ico {
+    background-color: #EBE7EE;
+    height: 46px;
+    width: 46px;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBE7EE;
+    border: 2px solid transparent; /* Borda inicial invisível */
+    border-radius: 5px; /* Arredonda os cantos */
+    transition: border-color 0.2s ease; /* Suaviza o efeito */
+}
+
+.container-pesquisa:focus-within {
+    border-color: #A238FF; /* Aplica a borda roxa quando o input está em foco */
+}
+
+input {
+    padding: 15px;
+    border: none;
+    background-color: transparent; /* Fundo transparente */
+    width: 300px;
+    outline: none; /* Remove o outline padrão */
+}
+
+
+input::placeholder{
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+    color: #A9A6AA;
+}
+
+hr{
+    width: 100%;
+    margin-top: 90px;
+    border:0.2px solid #efecf1;
+}

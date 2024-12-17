@@ -1,0 +1,116 @@
+aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 90dvh;
+    background-color: #F1F3F4;
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    border:1px solid #dbdbdb;
+}
+
+.titulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 25px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.titulo h1{
+    font-weight: 700;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-block: 5px;
+    padding-inline: 15px;
+    border-radius: 5px;
+    border: 1px solid #d2c8e4;
+    width: 100%;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.item:hover{
+    transform: scale(1.01);
+    background-color: #aaaaaa;
+}
+
+.item img{
+    width: 50px;
+    height: 50px;
+}
+
+.item p{
+    font-weight: 700;
+}
+
+.item span{
+    color: #8f8f8f;
+    font-size: 0.8rem;
+}
+
+.container-items{
+    display: flex;
+    overflow-y:scroll;
+    flex-direction: column;
+    padding-inline: 15px;
+    gap: 10px;
+}
+
+.container-items::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #7c7b7b;
+    
+    
+  }
+  
+  /* Para navegadores que suportam a pseudo-classe track */
+  .container-items::-webkit-scrollbar-track {
+    background: #f2f2f2;
+  }
+  
+
+ul{
+    list-style: none;
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+li{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+li svg{
+    width: 30px;
+    height: 30px;
+}
+
+.title{
+    padding-inline: 30px;
+    margin-top: 30px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.fav{
+    width: 50px;
+    height: 50px;
+    background-color: #FFD0C3;
+    padding: 10px;
+}
